@@ -1,0 +1,9 @@
+name:
+  check_project
+
+on: push
+
+jobs:
+  make setup:
+  make test:
+  make lint:
