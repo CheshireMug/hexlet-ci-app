@@ -5,6 +5,7 @@ on: push
 
 jobs:
   build:
-    make setup:
-    make test:
-    make lint:
+    steps:
+      make setup:
+      make test:
+      make lint:
