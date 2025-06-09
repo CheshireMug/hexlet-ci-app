@@ -4,6 +4,7 @@ name:
 on: push
 
 jobs:
-  make setup:
-  make test:
-  make lint:
+  build:
+    make setup:
+    make test:
+    make lint:
