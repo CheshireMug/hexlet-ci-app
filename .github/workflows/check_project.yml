@@ -1,12 +1,17 @@
-name:
-  check_project
+name: check_project
 
-on: push
+on: 
+  push:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
-      run:
-        make setup:
-        make test:
-        make lint:
+      - name: Install dependencies
+        run: make setup
+
+      - name: Run tests
+        run: make test
+
+      - name: Run linter
+        run: make lint
