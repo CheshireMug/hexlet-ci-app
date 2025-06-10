@@ -11,6 +11,9 @@ jobs:
 
       - uses: actions/setup-node@v4
 
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
+
       - name: Install dependencies
         run: make setup
 
